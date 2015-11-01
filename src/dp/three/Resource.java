@@ -1,4 +1,4 @@
-package designpatterns.three;
+package dp.three;
 
 import java.util.List;
 

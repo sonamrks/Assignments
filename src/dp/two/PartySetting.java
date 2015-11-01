@@ -1,4 +1,4 @@
-package designpatterns.two;
+package dp.two;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package designpatterns.one;
+package dp.one;
 
 import java.util.Scanner;
 

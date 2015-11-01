@@ -1,29 +1,29 @@
-package designpatterns.three;
+package dp.three;
 
 import java.util.List;
 
-public class Printer implements Resource {
+public class WorkStation implements Resource {
 	private String resourceId;
 	private int modelYear;
 	private String status;
 	private String supervisor;
 	private double costOfMaintanence;
 	
-	public Printer(String resourceId, int modelYear, String supervisor, double costOfMaintanence) {
+	public WorkStation(String resourceId, int modelYear, String supervisor, double costOfMaintanence) {
 		this.resourceId = resourceId;
 		this.modelYear= modelYear;
 		status = "active";
 		this.supervisor = supervisor;
-		this.costOfMaintanence = costOfMaintanence;
+		this.costOfMaintanence = costOfMaintanence;	
 		
-		System.out.println("Initiating printer with Resource Id: " + resourceId);
+		System.out.println("Initiating workstation with Resource Id: " + resourceId);
 	}
 	
 	@Override
 	public String getResourceId() {
 		return this.resourceId;
 	}
-	
+
 	@Override
 	public void setResourceId(String resourceId) {
 		this.resourceId = resourceId;
@@ -65,9 +65,8 @@ public class Printer implements Resource {
 	
 	@Override
 	public void setInactive(String resourceId) {
-		
 	}
-	
+
 	@Override
 	public String getSupervisor() {
 		return this.supervisor;
